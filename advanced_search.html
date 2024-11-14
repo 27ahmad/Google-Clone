@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <style>
+        body {
+            background-color: #28292a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .link-container {
+            text-align: right;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .link-container a {
+            color: #4285F4;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .link-container a:hover {
+            text-decoration: underline;
+        }
+
+        .logo-container {
+            padding: 20px;
+            margin-top: -40px;
+        }
+
+        .logo-container img {
+            width: 78px;
+            height: 28px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #f28b82;
+            font-weight: normal;
+            margin-top: 10px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #ccc;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #555;
+            background-color: #444;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .example {
+            font-size: 12px;
+            color: #ccc;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .example span {
+            font-weight: bold;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="link-container">
+        <a href="index.html">Google Search</a> | 
+        <a href="image_search.html">Image Search</a>
+    </div>
+
+    <div class="logo-container">
+        <img src="google.png" alt="Google Logo">
+    </div>
+
+    <h1>Advanced Search</h1>
+
+    <div class="form-container" style="padding-left: 20px;">
+        <form action="https://www.google.com/search" method="get">
+            
+            <div class="form-row">
+                <label for="allWords">Find pages with "all these words":</label>
+                <input type="text" name="q" id="allWords" placeholder="Enter words">
+                <div class="example">
+                    <span>Example:</span> tri-colour rat terrier
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="exactPhrase">Find pages with "this exact word or phrase":</label>
+                <input type="text" name="as_q" id="exactPhrase" placeholder="Enter exact phrase">
+                <div class="example">
+                    <span>Example:</span> "rat terrier"
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="anyWords">Find pages with "any of these words":</label>
+                <input type="text" name="as_epq" id="anyWords" placeholder="Enter words">
+                <div class="example">
+                    <span>Example:</span> miniature OR standard
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="noneWords">Find pages with "none of these words":</label>
+                <input type="text" name="as_eq" id="noneWords" placeholder="Enter words">
+                <div class="example">
+                    <span>Example:</span> -rodent, -"Jack Russell"
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
