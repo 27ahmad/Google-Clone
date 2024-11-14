@@ -10,7 +10,7 @@ This project is a simplified version of Google’s search interface, featuring:
 - 🖼️ **Image Search Page**: Similar to Google Images, where users can search for images.
 - 🛠️ **Advanced Search Page**: For more specific searches with filters like exact phrases, exclusions, and language options.
 
-Built with **HTML, CSS**, it recreates a familiar, Google-like user experience.
+Built with **HTML and CSS**, it recreates a familiar, Google-like user experience.
 
 ## ✨ Features
 
@@ -21,23 +21,7 @@ Built with **HTML, CSS**, it recreates a familiar, Google-like user experience.
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Knowledge of **HTML, CSS, and JavaScript** basics.
-- **Python** and **Flask** installed for testing the app locally.
-
-### Installation
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/cs50-project0-search.git
-   ```
-2. Move to the project directory:
-   ```bash
-   cd cs50-project0-search
-   ```
-3. Start the app (for local testing with Flask):
-   ```bash
-   flask run
-   ```
+- Knowledge of **HTML and CSS** basics
 
 ### 🖥️ Usage
 
